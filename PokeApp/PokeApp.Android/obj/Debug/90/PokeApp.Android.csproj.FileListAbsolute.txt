@@ -495,3 +495,13 @@ C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\stamp\_C
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\linksrc\Newtonsoft.Json.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\linksrc\System.Net.Http.Extensions.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\linksrc\System.Net.Http.Primitives.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\linksrc\System.Runtime.InteropServices.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\linksrc\System.Net.Primitives.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Http.Extensions.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Http.Primitives.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Primitives.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.dll

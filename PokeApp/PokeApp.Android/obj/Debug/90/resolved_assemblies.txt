@@ -3,9 +3,13 @@ C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\mscorlib.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\PokeApp.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Core.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Http.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Http.Extensions.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Http.Primitives.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Numerics.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Numerics.Vectors.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Runtime.dll
@@ -55,7 +59,6 @@ C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Xaml.dll
-C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Http.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Drawing.Common.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Runtime.Serialization.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.ServiceModel.Internals.dll
@@ -67,3 +70,5 @@ C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Web.Services.dll
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\Mono.Security.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.Android\obj\Debug\90\android\assets\System.Net.Primitives.dll

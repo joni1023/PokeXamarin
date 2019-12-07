@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PokeApp.MainPage">
-    <ListView x:Name="listaPokemon">
+    <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding name}" Detail="{Binding url}"/>
