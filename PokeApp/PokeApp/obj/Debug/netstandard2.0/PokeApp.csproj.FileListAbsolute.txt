@@ -1,0 +1,12 @@
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\bin\Debug\netstandard2.0\PokeApp.deps.json
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\bin\Debug\netstandard2.0\PokeApp.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\bin\Debug\netstandard2.0\PokeApp.pdb
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.csproj.CoreCompileInputs.cache
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.AssemblyInfoInputs.cache
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.AssemblyInfo.cs
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.dll
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.pdb
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.csprojAssemblyReference.cache
