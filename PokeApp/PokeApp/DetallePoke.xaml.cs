@@ -20,18 +20,19 @@ namespace PokeApp
             VerdetalleApi(nombre);
         }
 
-        private void VerdetalleApi(string nombre) 
+        private async void VerdetalleApi(string nombre) 
         {
             HttpClient cliente = new HttpClient();
             cliente.BaseAddress = new Uri("https://pokeapi.co");
-            var request = cliente.GetAsync("/api/v2/pokemon/"+nombre+" ").Result;
+            var request = await cliente.GetAsync("/api/v2/pokemon/"+nombre+" ");
             if (request.IsSuccessStatusCode)
             {
-                var respuestaJson = request.Content.ReadAsStringAsync().Result;
+                var respuestaJson = await request.Content.ReadAsStringAsync();
                 var respuesta = JsonConvert.DeserializeObject<PokemonDetalle>(respuestaJson);
-                altura.Text =Convert.ToString( respuesta.weight);
+                altura.Text =Convert.ToString(respuesta.weight);
                 Nombre.Text = respuesta.name;
                 Orden.Text =Convert.ToString(respuesta.order);
+                Img.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Orden.Text+".png";
 
             }
         }

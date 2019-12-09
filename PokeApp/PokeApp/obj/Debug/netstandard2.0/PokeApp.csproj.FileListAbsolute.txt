@@ -10,3 +10,15 @@ C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\Poke
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.pdb
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.csprojAssemblyReference.cache
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\bin\Debug\netstandard2.0\PokeApp.deps.json
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\bin\Debug\netstandard2.0\PokeApp.dll
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\bin\Debug\netstandard2.0\PokeApp.pdb
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\DetallePoke.xaml.g.cs
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.AssemblyInfoInputs.cache
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.AssemblyInfo.cs
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.dll
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.pdb
+C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.csprojAssemblyReference.cache

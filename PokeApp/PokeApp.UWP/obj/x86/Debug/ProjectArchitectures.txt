@@ -1,1 +1,0 @@
-C:\Users\Joni\source\repos\PokeApp\PokeApp\PokeApp.UWP\PokeApp.UWP.csproj;x86

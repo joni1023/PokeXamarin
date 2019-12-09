@@ -18,36 +18,41 @@ namespace PokeApp
         public MainPage()
         {
             InitializeComponent();
-            ConsumirApi();
             ConsumirApilist();
         }
 
-        public async void ConsumirApi()
-        {
-            HttpClient cliente = new HttpClient();
-            cliente.BaseAddress = new Uri("https://pokeapi.co");
-            var request = cliente.GetAsync("/api/v2/pokemon/10").Result;
-            if (request.IsSuccessStatusCode)
-            {
-                var respuestaJson = request.Content.ReadAsStringAsync().Result;
-                var respuesta = JsonConvert.DeserializeObject<Pokemon>(respuestaJson);
+        //public void ConsumirApi()
+        //{
+        //    HttpClient cliente = new HttpClient();
+        //    cliente.BaseAddress = new Uri("https://pokeapi.co");
+        //    var request = cliente.GetAsync("/api/v2/pokemon/10").Result;
+        //    if (request.IsSuccessStatusCode)
+        //    {
+        //        var respuestaJson = request.Content.ReadAsStringAsync().Result;
+        //        var respuesta = JsonConvert.DeserializeObject<Pokemon>(respuestaJson);
 
-                //nombre.Text = respuesta.name;
-            }
+        //        //nombre.Text = respuesta.name;
+        //    }
             
-        }
+        //}
         public async void ConsumirApilist()
         {
             HttpClient cliente = new HttpClient();
             cliente.BaseAddress = new Uri("https://pokeapi.co");
-            var request = cliente.GetAsync("/api/v2/pokemon").Result;
+            var request = await cliente.GetAsync("/api/v2/pokemon");
             if (request.IsSuccessStatusCode)
             {
-                var respuestaJson = request.Content.ReadAsStringAsync().Result;
+                var respuestaJson = await request.Content.ReadAsStringAsync();
                 var respuesta = JsonConvert.DeserializeObject<Respuesta>(respuestaJson);
                 listaPokemon.ItemsSource = respuesta.results;
             }
 
+        }
+
+        private async void ListaPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var select = e.SelectedItem as Pokemon;
+            await Navigation.PushModalAsync(new NavigationPage(new DetallePoke(select.name)));
         }
     }
 }
