@@ -31,7 +31,7 @@ namespace PokeApp
                 var respuesta = JsonConvert.DeserializeObject<PokemonDetalle>(respuestaJson);
                 altura.Text =Convert.ToString(respuesta.weight);
                 Nombre.Text = respuesta.name;
-                Orden.Text =Convert.ToString(respuesta.order);
+                Orden.Text =Convert.ToString(respuesta.id);
                 Img.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Orden.Text+".png";
 
             }

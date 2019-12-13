@@ -5,11 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PokeApp.MainPage">
-    <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected">
+    <StackLayout>
+    <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding name}" Detail="{Binding url}" ImageSource="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
+        <Button Text="mas pokemones" Clicked="Button_Clicked" />
+    </StackLayout>
 </ContentPage>
