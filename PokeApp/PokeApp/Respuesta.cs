@@ -8,5 +8,8 @@ namespace PokeApp
     {
         public int count { get; set; }
         public List<Pokemon> results { get; set; }
+
+        public string next { get; set; }
+
     }
 }

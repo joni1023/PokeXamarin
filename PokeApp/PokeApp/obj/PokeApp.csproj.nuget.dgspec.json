@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joni\\source\\repos\\PokeApp\\PokeApp\\PokeApp\\PokeApp.csproj": {}
+    "C:\\Users\\JON\\Desktop\\Proyecto personales\\PokeXamarin\\PokeApp\\PokeApp\\PokeApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joni\\source\\repos\\PokeApp\\PokeApp\\PokeApp\\PokeApp.csproj": {
+    "C:\\Users\\JON\\Desktop\\Proyecto personales\\PokeXamarin\\PokeApp\\PokeApp\\PokeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joni\\source\\repos\\PokeApp\\PokeApp\\PokeApp\\PokeApp.csproj",
+        "projectUniqueName": "C:\\Users\\JON\\Desktop\\Proyecto personales\\PokeXamarin\\PokeApp\\PokeApp\\PokeApp.csproj",
         "projectName": "PokeApp",
-        "projectPath": "C:\\Users\\Joni\\source\\repos\\PokeApp\\PokeApp\\PokeApp\\PokeApp.csproj",
-        "packagesPath": "C:\\Users\\Joni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joni\\source\\repos\\PokeApp\\PokeApp\\PokeApp\\obj\\",
+        "projectPath": "C:\\Users\\JON\\Desktop\\Proyecto personales\\PokeXamarin\\PokeApp\\PokeApp\\PokeApp.csproj",
+        "packagesPath": "C:\\Users\\JON\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JON\\Desktop\\Proyecto personales\\PokeXamarin\\PokeApp\\PokeApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Joni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JON\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -43,10 +42,6 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "Microsoft.Net.Http": {
-              "target": "Package",
-              "version": "[2.2.29, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -63,14 +58,20 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.1.0.555618, )"
+              "version": "[4.3.0.991221, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview9-014004\\RuntimeIdentifierGraph.json"
         }
       }
     }
