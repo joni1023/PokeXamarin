@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="PokeApp.MainPage">
     <StackLayout>
-    <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
+        <SearchBar x:Name="barSearch" SearchButtonPressed="SearchButtonPressed"/>
+        <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding name}" Detail="{Binding url}" ImageSource="{Binding image}"/>

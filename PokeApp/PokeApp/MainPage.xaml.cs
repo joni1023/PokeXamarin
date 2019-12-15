@@ -83,5 +83,26 @@ namespace PokeApp
             return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" +orden+ ".png";
 
         }
+
+        
+
+        private async void SearchButtonPressed(object sender, EventArgs e)
+        {
+            ObservableCollection<Pokemon> nuevalist = new ObservableCollection<Pokemon>();            //string palabraB = "pi";
+            string[] resultB = { "pikachu", "pichu" };
+            //busca las palabras iguales
+            HttpClient miclient = new HttpClient();
+            miclient.BaseAddress = new Uri("https://pokeapi.co");
+            foreach (string p in resultB)
+            {
+                var request = await miclient.GetAsync("/api/v2/pokemon/" + p + " ");
+                var respuestaJson = await request.Content.ReadAsStringAsync();
+                var convert = JsonConvert.DeserializeObject<Pokemon>(respuestaJson);
+                convert.image = convert.sprites.front_default;
+                nuevalist.Add(convert);
+            }
+
+            listaPokemon.ItemsSource = nuevalist;
+        }
     }
 }
