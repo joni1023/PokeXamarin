@@ -36,6 +36,7 @@ namespace PokeApp
                 var respuesta = JsonConvert.DeserializeObject<Respuesta>(respuestaJson);
                 foreach(Pokemon p in respuesta.results)
                 {
+                    p.image = BuscarImagen(p.url);
                     ListaMedia.Add(p);
                 }
                 urinext = respuesta.next;
@@ -65,11 +66,22 @@ namespace PokeApp
                 var respuesta = JsonConvert.DeserializeObject<Respuesta>(respuestaJson);
                 foreach (Pokemon p in respuesta.results)
                 {
+                    p.image = BuscarImagen(p.url);
                     ListaMedia.Add(p);
                 }
                 urinext = respuesta.next;
                 listaPokemon.ItemsSource = ListaMedia;
+                
             }
+        }
+
+        public string BuscarImagen(string uripokemon)
+        {
+            
+            string[] partiruri = uripokemon.Split('/');
+            string orden = partiruri[6];
+            return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" +orden+ ".png";
+
         }
     }
 }
