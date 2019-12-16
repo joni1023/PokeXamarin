@@ -6,10 +6,12 @@
              mc:Ignorable="d"
              x:Class="PokeApp.MainPage">
     <StackLayout>
-    <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
+        <SearchBar x:Name="barSearch" TextChanged="BarSearch_TextChanged"/>
+        <!--SearchButtonPressed="SearchButtonPressed" />-->
+        <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <ImageCell Text="{Binding name}" Detail="{Binding url}" ImageSource="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"/>
+                <ImageCell Text="{Binding name}" Detail="{Binding url}" ImageSource="{Binding image}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
