@@ -6,6 +6,7 @@ namespace PokeApp
 {
     public class Pokemon
     {
+        public int id { get; set; }
         public string name { get; set; }
         public string url { get; set; }
         public int order { get; set; }

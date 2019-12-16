@@ -18,7 +18,9 @@ namespace PokeApp
     {
         ObservableCollection<Pokemon> ListaMedia = new ObservableCollection<Pokemon>();
         string urinext = "";
-        
+        string nuevonumero = "";
+
+
         public MainPage()
         {
             InitializeComponent();
@@ -77,10 +79,21 @@ namespace PokeApp
 
         public string BuscarImagen(string uripokemon)
         {
-            
+            string nuevonumero = "";
             string[] partiruri = uripokemon.Split('/');
             string orden = partiruri[6];
-            return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" +orden+ ".png";
+            int numero = orden.Count();
+            switch (numero)
+            {
+                case 1: nuevonumero = "00" + orden + "";
+                    break;
+                case 2: nuevonumero = "0" + orden + "";
+                    break;
+                default: nuevonumero = orden;
+                    break;
+            }
+            
+            return "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/" + nuevonumero+ ".png";
 
         }
 
@@ -103,6 +116,36 @@ namespace PokeApp
             }
 
             listaPokemon.ItemsSource = nuevalist;
+        }
+
+        private async void BarSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ObservableCollection<Pokemon> nuevalist = new ObservableCollection<Pokemon>();            //string palabraB = "pi";
+            string miletra = e.NewTextValue;
+            if (miletra.Equals(""))
+            {
+                ConsumirApilist();
+            }
+            else
+            {
+                List<string> resultB = ServicioPokemon.BuscarNombresPokemon(miletra);
+                //busca las palabras iguales
+                HttpClient miclient = new HttpClient();
+                miclient.BaseAddress = new Uri("https://pokeapi.co");
+                foreach (string p in resultB)
+                {
+                    var request  = await miclient.GetAsync("/api/v2/pokemon/" + p + " ");
+                    if (request.IsSuccessStatusCode) {
+                        var respuestaJson = await request.Content.ReadAsStringAsync();
+                        var convert = JsonConvert.DeserializeObject<Pokemon>(respuestaJson);
+                        convert.image = BuscarImagen("https://pokeapi.co/api/v2/pokemon/" + convert.id + "");
+                        nuevalist.Add(convert);
+                    }
+                        
+                }
+
+                listaPokemon.ItemsSource = nuevalist;
+            }
         }
     }
 }
