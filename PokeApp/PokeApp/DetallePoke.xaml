@@ -8,10 +8,13 @@
              x:Class="PokeApp.DetallePoke">
     <ContentPage.Content>
         <StackLayout>
+            <CarouselView x:Name="Carrusel">
+                
+            </CarouselView>
             <Label x:Name="Nombre" />
             <Label x:Name="Orden"/>
             <Label x:Name="altura"/>
-            <Image x:Name="Img" WidthRequest="200" HeightRequest="200"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

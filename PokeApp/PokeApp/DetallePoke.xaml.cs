@@ -32,9 +32,18 @@ namespace PokeApp
                 altura.Text =Convert.ToString(respuesta.weight);
                 Nombre.Text = respuesta.name;
                 Orden.Text =Convert.ToString(respuesta.id);
-                Img.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Orden.Text+".png";
-
+                //Img.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Orden.Text+".png";
+                var list = new List<Item> {
+                    new Item{imagenuri= respuesta.sprites.back_default },
+                    new Item{imagenuri=respuesta.sprites.front_default}
+                };
+                Carrusel.ItemsSource = list;
             }
         }
+    }
+
+    public class Item
+    {
+        public string imagenuri { get; set; }
     }
 }
