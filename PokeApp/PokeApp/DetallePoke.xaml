@@ -8,10 +8,18 @@
              x:Class="PokeApp.DetallePoke">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="Nombre" />
-            <Label x:Name="Orden"/>
-            <Label x:Name="altura"/>
-            <Image x:Name="Img" WidthRequest="200" HeightRequest="200"/>
+            <CarouselView x:Name="carrusel">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding imagenuri}"/>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+                
+
+            </CarouselView>
+            <IndicatorView IndicatorColor="Gray" SelectedIndicatorColor="IndianRed"
+                           VerticalOptions="End"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

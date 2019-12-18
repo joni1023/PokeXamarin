@@ -29,12 +29,25 @@ namespace PokeApp
             {
                 var respuestaJson = await request.Content.ReadAsStringAsync();
                 var respuesta = JsonConvert.DeserializeObject<PokemonDetalle>(respuestaJson);
-                altura.Text =Convert.ToString(respuesta.weight);
-                Nombre.Text = respuesta.name;
-                Orden.Text =Convert.ToString(respuesta.id);
-                Img.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Orden.Text+".png";
-
+                //altura.Text =Convert.ToString(respuesta.weight);
+                //Nombre.Text = respuesta.name;
+                //Orden.Text =Convert.ToString(respuesta.id);
+                //Img.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Orden.Text+".png";
+                var litaimagenes = new List<Item>
+                {
+                    new Item {
+                    imagenuri= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png"},
+                    new Item {
+                    imagenuri= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png"},
+                    new Item {
+                    imagenuri= "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png"}
+                };
+                carrusel.ItemsSource = litaimagenes;
             }
         }
+    }
+    public class Item
+    {
+        public string imagenuri { get; set; }
     }
 }
