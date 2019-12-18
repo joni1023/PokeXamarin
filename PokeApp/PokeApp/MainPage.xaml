@@ -4,17 +4,21 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PokeApp.MainPage">
+             x:Class="PokeApp.MainPage"
+             Title="MI App Pokemon">
     <StackLayout>
         <SearchBar x:Name="barSearch" TextChanged="BarSearch_TextChanged"/>
         <!--SearchButtonPressed="SearchButtonPressed" />-->
-        <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ImageCell Text="{Binding name}" Detail="{Binding url}" ImageSource="{Binding image}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+        <StackLayout>
+            <ListView x:Name="listaPokemon" ItemSelected="ListaPokemon_ItemSelected" ItemsSource="{Binding}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding name}" Detail="{Binding url}" ImageSource="{Binding image}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
         <Button Text="mas pokemones" Clicked="Button_Clicked" />
     </StackLayout>
 </ContentPage>

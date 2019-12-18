@@ -51,7 +51,7 @@ namespace PokeApp
         private async void ListaPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var select = e.SelectedItem as Pokemon;
-            await Navigation.PushModalAsync(new NavigationPage(new DetallePoke(select.name)));
+            await Navigation.PushAsync(new DetallePoke(select.name));
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

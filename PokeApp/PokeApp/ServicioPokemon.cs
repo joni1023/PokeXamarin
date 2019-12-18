@@ -820,7 +820,7 @@ namespace PokeApp
 
         public static List<string> BuscarNombresPokemon (string letra)
         {
-            return ListaPokemon.Where(p => p.Contains(letra)).ToList();
+            return ListaPokemon.Where(p => p.StartsWith(letra)).ToList();
         }
     }
 }

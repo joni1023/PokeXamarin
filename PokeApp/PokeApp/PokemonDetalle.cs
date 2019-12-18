@@ -20,10 +20,12 @@ namespace PokeApp
             public string name { get; set; }
             public int order { get; set; }
             //public Species species { get; set; }
-           // public Sprites sprites { get; set; }
+            public Sprites sprites { get; set; }
             //public List<Stat> stats { get; set; }
             //public List<Type> types { get; set; }
             public int weight { get; set; }
+
         
     }
+   
 }

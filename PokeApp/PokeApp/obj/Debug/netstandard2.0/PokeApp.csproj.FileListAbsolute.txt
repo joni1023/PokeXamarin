@@ -21,4 +21,3 @@ C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\n
 C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.dll
 C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.pdb
-C:\Users\JON\Desktop\Proyecto personales\PokeXamarin\PokeApp\PokeApp\obj\Debug\netstandard2.0\PokeApp.csprojAssemblyReference.cache

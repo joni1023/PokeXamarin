@@ -30,6 +30,7 @@ namespace PokeApp.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
         }
 
         /// <summary>
